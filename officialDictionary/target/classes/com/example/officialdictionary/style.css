@@ -1,0 +1,231 @@
+#main {
+    -fx-pref-width: 1000;
+    -fx-pref-height: 648;
+}
+
+/*=== Begin Title Bar ===*/
+#titleBar {
+    -fx-pref-width: 1000;
+    -fx-pref-height: 60;
+}
+
+#nameApp {
+    -fx-pref-width: 208;
+    -fx-pref-height: 60;
+    -fx-background-color: #273ab5;
+    -fx-font-size: 21;
+    -fx-graphic-text-gap: 12;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+}
+
+#userBar {
+    -fx-background-color: #fdfdfd;
+    -fx-pref-width: 792;
+    -fx-pref-height: 60;
+    -fx-font-family: "Lato Black";
+    -fx-alignment: center-left;
+}
+
+#titleBoxShadow {
+    -fx-pref-height: 1;
+    -fx-effect: dropshadow(one-pass-box, rgba(0, 0, 0, 0.4), 4, 0, 1, 1);
+    -fx-opacity: 0.7;
+}
+
+#titlePane {
+    -fx-pref-width: 670;
+}
+
+#userName {
+    -fx-text-fill: #666;
+    -fx-font-size: 13;
+    -fx-graphic-text-gap: 10;
+}
+
+/*=== End Title Bar ===*/
+
+/*=== Begin Menu ===*/
+#menu {
+    -fx-pref-width: 208;
+    -fx-pref-height: 584;
+    -fx-background-color: #273ab5;
+    -fx-spacing: 4;
+}
+
+.menuHeading {
+    -fx-pref-width: 200;
+    -fx-pref-height: 28;
+
+    -fx-background-color: #273ab5;
+    -fx-font-family: "Lato Black";
+    -fx-font-size: 13.5;
+    -fx-text-fill: #fff;
+    -fx-alignment: center-left;
+}
+
+.menuItem {
+    -fx-pref-width: 200;
+    -fx-pref-height: 52;
+
+    -fx-background-color: #273ab5;
+    -fx-background-radius: 8;
+
+    -fx-font-family: "Lato Black";
+    -fx-font-size: 17;
+    -fx-text-fill: #fff;
+    -fx-alignment: center-left;
+    -fx-graphic-text-gap: 10;
+}
+
+.menuItem:hover {
+    -fx-background-color: #2131a2;
+}
+
+/*=== End Menu ===*/
+
+/*=== Begin Body ===*/
+#body {
+    -fx-background-color: #f9fafe;
+}
+
+/* Begin Tool Bar */
+#toolBar {
+    -fx-pref-height: 76;
+    -fx-alignment: center-left;
+}
+
+#mainHeading {
+    -fx-pref-width: 320;
+    -fx-font-family: "Lato Black";
+    -fx-font-size: 32;
+    -fx-padding: 0 0 0 20;
+}
+
+#searchBar {
+    -fx-pref-width: 480;
+    -fx-pref-height: 40;
+
+    -fx-background-color: #fff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 6, 0, 0, 0);
+
+    -fx-font-size: 14;
+    -fx-background-radius: 24;
+    -fx-padding: 4 20;
+    -fx-font-style: normal;
+}
+
+.buttonEvent {
+    -fx-pref-width: 108;
+    -fx-pref-height: 40;
+    -fx-font-family: "Lato Black";
+    -fx-font-size: 15;
+    -fx-background-radius: 4;
+    -fx-graphic-text-gap: 6;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 6, 0, 1, 1);
+}
+
+#searchButton,
+#updateButton {
+    -fx-background-color: #ffc91b;
+}
+
+#searchButton:hover,
+#updateButton:hover,
+#translateButton:hover {
+    -fx-background-color: #e7b619;
+}
+
+#soundButton {
+    -fx-background-color: #30db88;
+}
+
+#soundButton:hover {
+    -fx-background-color: #2bc279;
+}
+
+#translateButton {
+    -fx-pref-width: 116;
+    -fx-pref-height: 40;
+    -fx-background-color: #ffc91b;
+    -fx-font-family: "Lato Black";
+    -fx-font-size: 14;
+    -fx-background-radius: 4;
+    -fx-graphic-text-gap: 6;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 6, 0, 1, 1);
+}
+
+.toolBarPane {
+    -fx-pref-width: 32;
+}
+
+/* End Tool Bar */
+
+#webViewContent,
+.content {
+    -fx-background-color: #fff;
+    -fx-font-size: 18;
+    -fx-font-style: normal;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 6, 0, 0, 1);
+}
+
+#webViewContent {
+    -fx-pref-height: 420;
+}
+
+.content {
+    -fx-pref-height: 170;
+}
+
+#mainSection {
+    -fx-alignment: center;
+    -fx-spacing: 36;
+}
+
+.contentSection {
+    -fx-pref-height: 210;
+}
+
+.contentHeading {
+    -fx-pref-width: 728;
+    -fx-pref-height: 40;
+
+    -fx-background-color: #273ab5;
+    -fx-font-family: "Lato Black";
+    -fx-text-fill: #fff;
+    -fx-font-size: 16;
+    -fx-font-style: normal;
+    -fx-alignment: center;
+}
+
+.guideLine {
+    -fx-pref-height: 40;
+    -fx-font-size: 18;
+    -fx-alignment: center-left;
+    -fx-font-style: normal;
+}
+
+.guideButton {
+    -fx-pref-width: 128;
+    -fx-pref-height: 40;
+}
+
+.bodyPane {
+    -fx-pref-width: 32;
+}
+
+#footer {
+    -fx-pref-height: 52;
+    -fx-text-alignment: center;
+    -fx-opacity: 0.7;
+}
+
+#footerContent {
+    -fx-font-size: 12;
+    -fx-pref-height: 40;
+    -fx-font-weight: bold;
+}
+
+/*=== End Body ===*/
+
+

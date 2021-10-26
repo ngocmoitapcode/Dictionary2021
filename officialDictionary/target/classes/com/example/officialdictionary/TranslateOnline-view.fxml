@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="648.0" prefWidth="1000.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.officialdictionary.HelloController">
+   <children>
+      <BorderPane id="main" prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <center>
+                  <VBox id="mainSection" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox prefHeight="214.0" prefWidth="386.0" styleClass="contentSection">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="18.0" prefWidth="750.0" styleClass="contentHeading" text="English">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font name="Corbel Italic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="textTranslate" prefHeight="192.0" prefWidth="373.0" promptText="Type your text here" styleClass="content" wrapText="true" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="245.0" prefWidth="386.0" styleClass="contentSection">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="32.0" prefWidth="654.0" styleClass="contentHeading" text="Vietnamese">
+                                 <font>
+                                    <Font name="Corbel Italic" size="22.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="textExplain" editable="false" prefHeight="220.0" prefWidth="386.0" promptText="Translation" styleClass="content" wrapText="true" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets top="4.0" />
+                     </BorderPane.margin>
+                  </VBox>
+               </center>
+               <left>
+                  <Pane prefHeight="200.0" prefWidth="200.0" styleClass="bodyPane" BorderPane.alignment="CENTER" />
+               </left>
+               <right>
+                  <Pane prefHeight="200.0" prefWidth="200.0" styleClass="bodyPane" BorderPane.alignment="CENTER" />
+               </right>
+               <bottom>
+                  <TextFlow id="footer" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label id="footerContent" text="Developed by Team">
+                           <graphic>
+                              <ImageView fitHeight="13.0" fitWidth="13.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/copyright.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets top="16.0" />
+                           </padding>
+                        </Label>
+                     </children></TextFlow>
+               </bottom>
+               <top>
+                  <HBox id="toolBar" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0" styleClass="toolBarPane" />
+                        <Label id="mainHeading" text="Paragraph" />
+                        <Pane prefHeight="200.0" prefWidth="292.0" />
+                        <Button id="translateButton" graphicTextGap="0.0" mnemonicParsing="false" onAction="#Translate" styleClass="buttonEvent" text="Translate">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/refresh1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Pane prefHeight="200.0" prefWidth="200.0" styleClass="toolBarPane" />
+                     </children>
+                  </HBox>
+               </top>
+            </BorderPane>
+         </center>
+         <left>
+            <VBox id="menu" prefHeight="640.0" prefWidth="295.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label styleClass="menuHeading" text="OTHERS">
+                     <VBox.margin>
+                        <Insets left="14.0" top="12.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#Back" prefHeight="52.0" prefWidth="295.0" styleClass="menuItem" text="Back" textFill="#2e4aae">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/reply.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="12.0" right="12.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#Help" prefHeight="52.0" prefWidth="295.0" styleClass="menuItem" text="Help" textFill="#2e4aae">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/help1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="12.0" right="12.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#Exit" prefHeight="52.0" prefWidth="295.0" styleClass="menuItem" text="Exit" textFill="#2e4aae">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/exit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="12.0" right="12.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <HBox id="titleBar" BorderPane.alignment="CENTER">
+               <children>
+                  <Label id="nameApp" alignment="CENTER" text="DICTIONARY" textFill="#adbee0">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/dictionary1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <VBox id="userBar" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox id="userBar" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Pane id="titlePane" />
+                              <Label id="userName" graphicTextGap="0.0" text="User Name">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@icons/user.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <WebView id="titleBoxShadow" prefHeight="17.0" prefWidth="792.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
